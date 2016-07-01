@@ -1,0 +1,55 @@
+body {
+  font-family: 'Raleway', sans-serif !important; }
+
+#head {
+  padding: 10px;
+  border: 10px solid #DC143C;
+  margin-top: 50px; }
+  #head h1 {
+    font-size: 80px;
+    color: #DC143C;
+    font-weight: bold; }
+  #head p {
+    color: #DC143C;
+    font-weight: bold; }
+    #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+
+#addi {
+  background-color: #DC143C;
+  padding: 10px; }
+  #addi .instrucciones {
+    color: white; }
+    #addi .instrucciones ul li {
+      list-style: none; }
+  #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #addi .input-group input:focus {
+        color: #DC143C; }
+    #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #DC143C; }
+
+#added {
+  padding: 10px;
+  border: 10px solid #DC143C; }
+  #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #DC143C;
+    padding: 10px;
+    line-height: 20px; }
+    #added .tareaNueva a {
+      color: #DC143C;
+      font-size: 20px; }
+      #added .tareaNueva a:hover {
+        color: #6b0c22; }
+    #added .tareaNueva b .terminado {
+      text-decoration: line-through; }
+
+/*# sourceMappingURL=main.css.map */

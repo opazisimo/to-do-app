@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Albahaca To Do App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+		<script src="https://use.fontawesome.com/a4f2ba36c5.js"></script>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="int col-md-8 col-md-offset-2">
+					<header id="head" class="text-center">
+						<h1>To Do App</h1>
+						<p><i class="fa fa-calendar" aria-hidden="true"></i> Organiza tus tareas diarias! <i class="fa fa-calendar" aria-hidden="true"></i></p>
+					</header>
+					<section id="addi">
+				    <div class="instrucciones text-center">
+				    	<h3><b>Instrucciones</b></h3>
+				    	<ul>
+				    		<li>1.- Para agregar una tarea, escríbela en la caja de abajo y luego pulsa el botón "Añade tu tarea!"</li>
+				    		<li>2.- Para marcarla como realizada, pulsa en la checkbox que se encuentra a la izquierda de la tarea.</li>
+				    		<li>3.- Para eliminar la tarea, presiona la <i class="fa fa-times" aria-hidden="true"></i> que se encuentra a la derecha de la tarea.</li>
+				    	</ul>
+				    </div>
+				    <div class="input-group">
+				      <input type="text" class="form-control" placeholder="Escribe aquí tu tarea">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default btn-addi" type="button" onclick="agregaTarea()">Añade tu tarea! <i class="fa fa-heart" aria-hidden="true"></i></button>
+				      </span>
+				    </div>
+					</section>
+					<section id="added">
+				<!--<div class="tareaNueva">
+							<input type="checkbox">
+							<b class="terminado">Terminar el trabajo</b>
+							<a type="button"><i class="fa fa-times" aria-hidden="true"></i></a>
+						</div>  -->
+					</section>
+				</div>
+			</div>			
+		</div>
+<!-- Archivos JS: Main y Bootstrap -->
+		<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

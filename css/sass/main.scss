@@ -1,0 +1,77 @@
+body{
+	font-family: 'Raleway', sans-serif !important;
+
+}
+
+#head {
+	padding:10px;
+	border: 10px solid $crim;
+	margin-top: 50px;
+	h1 {
+		font-size: 80px;
+		color: $crim;
+		font-weight: bold;
+	}
+	p {
+		color: $crim;
+		font-weight: bold;
+		i {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+	}
+}
+
+#addi {
+	background-color: $crim;
+	padding: 10px;
+	.instrucciones {
+		color: white;
+		ul {
+			li {
+			list-style: none;
+			}
+		}
+	}
+	.input-group {
+		margin: 0 auto;
+		padding: 10px;
+		input {
+			margin-top:30px;
+			margin-bottom: 30px;
+			&:focus {
+				color: $crim;
+			}
+		}
+		.input-group-btn {
+			.btn-addi {
+				font-weight: bold;
+				color: $crim;
+			}
+		}
+	}
+}
+
+#added {
+	padding: 10px;	
+	border: 10px solid $crim;
+	.tareaNueva {
+		margin: 0 auto;
+		width: 300px;
+		color: $crim;
+		padding: 10px;
+		line-height: 20px;
+		a {
+			color: $crim;
+			font-size:20px;
+			&:hover {
+				color: $crimDark;
+			}
+		}
+		b {
+			.terminado {
+				text-decoration: line-through;
+			}
+		}
+	}
+}
