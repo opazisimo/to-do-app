@@ -1,55 +1,430 @@
 body {
   font-family: 'Raleway', sans-serif !important; }
 
-#head {
-  padding: 10px;
-  border: 10px solid #DC143C;
-  margin-top: 50px; }
-  #head h1 {
+#todo.default #head {
+  padding: 15px;
+  border: 10px solid #DC143C; }
+  #todo.default #head h1 {
     font-size: 80px;
     color: #DC143C;
     font-weight: bold; }
-  #head p {
+  #todo.default #head p {
     color: #DC143C;
     font-weight: bold; }
-    #head p i {
+    #todo.default #head p i {
       margin-left: 20px;
       margin-right: 20px; }
-
-#addi {
+#todo.default #addi {
   background-color: #DC143C;
   padding: 10px; }
-  #addi .instrucciones {
+  #todo.default #addi .instrucciones {
     color: white; }
-    #addi .instrucciones ul li {
+    #todo.default #addi .instrucciones ul li {
       list-style: none; }
-  #addi .input-group {
+  #todo.default #addi .input-group {
     margin: 0 auto;
     padding: 10px; }
-    #addi .input-group input {
+    #todo.default #addi .input-group input {
       margin-top: 30px;
       margin-bottom: 30px; }
-      #addi .input-group input:focus {
+      #todo.default #addi .input-group input:focus {
         color: #DC143C; }
-    #addi .input-group .input-group-btn .btn-addi {
+    #todo.default #addi .input-group .input-group-btn .btn-addi {
       font-weight: bold;
       color: #DC143C; }
-
-#added {
+#todo.default #added {
   padding: 10px;
   border: 10px solid #DC143C; }
-  #added .tareaNueva {
+  #todo.default #added .tareaNueva {
     margin: 0 auto;
     width: 300px;
     color: #DC143C;
     padding: 10px;
     line-height: 20px; }
-    #added .tareaNueva a {
+    #todo.default #added .tareaNueva a {
       color: #DC143C;
       font-size: 20px; }
-      #added .tareaNueva a:hover {
+      #todo.default #added .tareaNueva a:hover {
         color: #6b0c22; }
-    #added .tareaNueva b .terminado {
-      text-decoration: line-through; }
+    #todo.default #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.default #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+#todo.crimson #head {
+  padding: 15px;
+  border: 10px solid #DC143C; }
+  #todo.crimson #head h1 {
+    font-size: 80px;
+    color: #DC143C;
+    font-weight: bold; }
+  #todo.crimson #head p {
+    color: #DC143C;
+    font-weight: bold; }
+    #todo.crimson #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+#todo.crimson #addi {
+  background-color: #DC143C;
+  padding: 10px; }
+  #todo.crimson #addi .instrucciones {
+    color: white; }
+    #todo.crimson #addi .instrucciones ul li {
+      list-style: none; }
+  #todo.crimson #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #todo.crimson #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #todo.crimson #addi .input-group input:focus {
+        color: #DC143C; }
+    #todo.crimson #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #DC143C; }
+#todo.crimson #added {
+  padding: 10px;
+  border: 10px solid #DC143C; }
+  #todo.crimson #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #DC143C;
+    padding: 10px;
+    line-height: 20px; }
+    #todo.crimson #added .tareaNueva a {
+      color: #DC143C;
+      font-size: 20px; }
+      #todo.crimson #added .tareaNueva a:hover {
+        color: #6b0c22; }
+    #todo.crimson #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.crimson #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+#todo.blueLight #head {
+  padding: 15px;
+  border: 10px solid #588c8c; }
+  #todo.blueLight #head h1 {
+    font-size: 80px;
+    color: #588c8c;
+    font-weight: bold; }
+  #todo.blueLight #head p {
+    color: #588c8c;
+    font-weight: bold; }
+    #todo.blueLight #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+#todo.blueLight #addi {
+  background-color: #588c8c;
+  padding: 10px; }
+  #todo.blueLight #addi .instrucciones {
+    color: white; }
+    #todo.blueLight #addi .instrucciones ul li {
+      list-style: none; }
+  #todo.blueLight #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #todo.blueLight #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #todo.blueLight #addi .input-group input:focus {
+        color: #588c8c; }
+    #todo.blueLight #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #588c8c; }
+#todo.blueLight #added {
+  padding: 10px;
+  border: 10px solid #588c8c; }
+  #todo.blueLight #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #588c8c;
+    padding: 10px;
+    line-height: 20px; }
+    #todo.blueLight #added .tareaNueva a {
+      color: #588c8c;
+      font-size: 20px; }
+      #todo.blueLight #added .tareaNueva a:hover {
+        color: #011c26; }
+    #todo.blueLight #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.blueLight #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+#todo.blueDark #head {
+  padding: 15px;
+  border: 10px solid #011c26; }
+  #todo.blueDark #head h1 {
+    font-size: 80px;
+    color: #011c26;
+    font-weight: bold; }
+  #todo.blueDark #head p {
+    color: #011c26;
+    font-weight: bold; }
+    #todo.blueDark #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+#todo.blueDark #addi {
+  background-color: #011c26;
+  padding: 10px; }
+  #todo.blueDark #addi .instrucciones {
+    color: white; }
+    #todo.blueDark #addi .instrucciones ul li {
+      list-style: none; }
+  #todo.blueDark #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #todo.blueDark #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #todo.blueDark #addi .input-group input:focus {
+        color: #011c26; }
+    #todo.blueDark #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #011c26; }
+#todo.blueDark #added {
+  padding: 10px;
+  border: 10px solid #011c26; }
+  #todo.blueDark #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #011c26;
+    padding: 10px;
+    line-height: 20px; }
+    #todo.blueDark #added .tareaNueva a {
+      color: #011c26;
+      font-size: 20px; }
+      #todo.blueDark #added .tareaNueva a:hover {
+        color: #588c8c; }
+    #todo.blueDark #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.blueDark #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+#todo.rojo #head {
+  padding: 15px;
+  border: 10px solid #8B0000; }
+  #todo.rojo #head h1 {
+    font-size: 80px;
+    color: #8B0000;
+    font-weight: bold; }
+  #todo.rojo #head p {
+    color: #8B0000;
+    font-weight: bold; }
+    #todo.rojo #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+#todo.rojo #addi {
+  background-color: #8B0000;
+  padding: 10px; }
+  #todo.rojo #addi .instrucciones {
+    color: white; }
+    #todo.rojo #addi .instrucciones ul li {
+      list-style: none; }
+  #todo.rojo #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #todo.rojo #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #todo.rojo #addi .input-group input:focus {
+        color: #8B0000; }
+    #todo.rojo #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #8B0000; }
+#todo.rojo #added {
+  padding: 10px;
+  border: 10px solid #8B0000; }
+  #todo.rojo #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #8B0000;
+    padding: 10px;
+    line-height: 20px; }
+    #todo.rojo #added .tareaNueva a {
+      color: #8B0000;
+      font-size: 20px; }
+      #todo.rojo #added .tareaNueva a:hover {
+        color: #FF8C00; }
+    #todo.rojo #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.rojo #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+#todo.naranja #head {
+  padding: 15px;
+  border: 10px solid #FF8C00; }
+  #todo.naranja #head h1 {
+    font-size: 80px;
+    color: #FF8C00;
+    font-weight: bold; }
+  #todo.naranja #head p {
+    color: #FF8C00;
+    font-weight: bold; }
+    #todo.naranja #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+#todo.naranja #addi {
+  background-color: #FF8C00;
+  padding: 10px; }
+  #todo.naranja #addi .instrucciones {
+    color: white; }
+    #todo.naranja #addi .instrucciones ul li {
+      list-style: none; }
+  #todo.naranja #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #todo.naranja #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #todo.naranja #addi .input-group input:focus {
+        color: #FF8C00; }
+    #todo.naranja #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #FF8C00; }
+#todo.naranja #added {
+  padding: 10px;
+  border: 10px solid #FF8C00; }
+  #todo.naranja #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #FF8C00;
+    padding: 10px;
+    line-height: 20px; }
+    #todo.naranja #added .tareaNueva a {
+      color: #FF8C00;
+      font-size: 20px; }
+      #todo.naranja #added .tareaNueva a:hover {
+        color: #FFD700; }
+    #todo.naranja #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.naranja #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+#todo.amarillo #head {
+  padding: 15px;
+  border: 10px solid #FFD700; }
+  #todo.amarillo #head h1 {
+    font-size: 80px;
+    color: #FFD700;
+    font-weight: bold; }
+  #todo.amarillo #head p {
+    color: #FFD700;
+    font-weight: bold; }
+    #todo.amarillo #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+#todo.amarillo #addi {
+  background-color: #FFD700;
+  padding: 10px; }
+  #todo.amarillo #addi .instrucciones {
+    color: white; }
+    #todo.amarillo #addi .instrucciones ul li {
+      list-style: none; }
+  #todo.amarillo #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #todo.amarillo #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #todo.amarillo #addi .input-group input:focus {
+        color: #FFD700; }
+    #todo.amarillo #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #FFD700; }
+#todo.amarillo #added {
+  padding: 10px;
+  border: 10px solid #FFD700; }
+  #todo.amarillo #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #FFD700;
+    padding: 10px;
+    line-height: 20px; }
+    #todo.amarillo #added .tareaNueva a {
+      color: #FFD700;
+      font-size: 20px; }
+      #todo.amarillo #added .tareaNueva a:hover {
+        color: #90EE90; }
+    #todo.amarillo #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.amarillo #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+#todo.verde #head {
+  padding: 15px;
+  border: 10px solid #90EE90; }
+  #todo.verde #head h1 {
+    font-size: 80px;
+    color: #90EE90;
+    font-weight: bold; }
+  #todo.verde #head p {
+    color: #90EE90;
+    font-weight: bold; }
+    #todo.verde #head p i {
+      margin-left: 20px;
+      margin-right: 20px; }
+#todo.verde #addi {
+  background-color: #90EE90;
+  padding: 10px; }
+  #todo.verde #addi .instrucciones {
+    color: white; }
+    #todo.verde #addi .instrucciones ul li {
+      list-style: none; }
+  #todo.verde #addi .input-group {
+    margin: 0 auto;
+    padding: 10px; }
+    #todo.verde #addi .input-group input {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      #todo.verde #addi .input-group input:focus {
+        color: #90EE90; }
+    #todo.verde #addi .input-group .input-group-btn .btn-addi {
+      font-weight: bold;
+      color: #90EE90; }
+#todo.verde #added {
+  padding: 10px;
+  border: 10px solid #90EE90; }
+  #todo.verde #added .tareaNueva {
+    margin: 0 auto;
+    width: 300px;
+    color: #90EE90;
+    padding: 10px;
+    line-height: 20px; }
+    #todo.verde #added .tareaNueva a {
+      color: #90EE90;
+      font-size: 20px; }
+      #todo.verde #added .tareaNueva a:hover {
+        color: #DC143C; }
+    #todo.verde #added .tareaNueva b {
+      margin-left: 10px;
+      margin-right: 10px; }
+      #todo.verde #added .tareaNueva b.terminado {
+        text-decoration: line-through; }
+
+#elige {
+  height: 60px; }
+  #elige .cajita {
+    display: inline;
+    font-size: 25px;
+    line-height: 50px; }
+    #elige .cajita .fa {
+      display: inline; }
+      #elige .cajita .fa:hover {
+        font-size: 28px; }
+    #elige .cajita.crim {
+      color: #DC143C; }
+    #elige .cajita.claro {
+      color: #588c8c; }
+    #elige .cajita.oscuro {
+      color: #011c26; }
+    #elige .cajita.rojo {
+      color: #8B0000; }
+    #elige .cajita.naranja {
+      color: #FF8C00; }
+    #elige .cajita.amarillo {
+      color: #FFD700; }
+    #elige .cajita.verde {
+      color: #90EE90; }
 
 /*# sourceMappingURL=main.css.map */

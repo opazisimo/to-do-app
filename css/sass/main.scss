@@ -3,75 +3,65 @@ body{
 
 }
 
-#head {
-	padding:10px;
-	border: 10px solid $crim;
-	margin-top: 50px;
-	h1 {
-		font-size: 80px;
-		color: $crim;
-		font-weight: bold;
+#todo {
+	&.default {
+		@include colores ($crim, $crimDark);
 	}
-	p {
-		color: $crim;
-		font-weight: bold;
-		i {
-			margin-left: 20px;
-			margin-right: 20px;
-		}
+	&.crimson {
+		@include colores ($crim, $crimDark);
 	}
-}
-
-#addi {
-	background-color: $crim;
-	padding: 10px;
-	.instrucciones {
-		color: white;
-		ul {
-			li {
-			list-style: none;
-			}
-		}
+	&.blueLight {
+		@include colores ($blueLight, $blueDark);
 	}
-	.input-group {
-		margin: 0 auto;
-		padding: 10px;
-		input {
-			margin-top:30px;
-			margin-bottom: 30px;
-			&:focus {
-				color: $crim;
-			}
-		}
-		.input-group-btn {
-			.btn-addi {
-				font-weight: bold;
-				color: $crim;
-			}
-		}
+	&.blueDark {
+		@include colores ($blueDark, $blueLight);
+	}
+	&.rojo {
+		@include colores ($rojo, $naranja);
+	}
+	&.naranja {
+		@include colores ($naranja, $amarillo);
+	}
+	&.amarillo {
+		@include colores ($amarillo, $verde);
+	}
+	&.verde {
+		@include colores ($verde, $crim);
 	}
 }
 
-#added {
-	padding: 10px;	
-	border: 10px solid $crim;
-	.tareaNueva {
-		margin: 0 auto;
-		width: 300px;
-		color: $crim;
-		padding: 10px;
-		line-height: 20px;
-		a {
-			color: $crim;
-			font-size:20px;
+#elige {
+	height:60px;
+	.cajita {
+		display: inline;
+		font-size:25px;
+		line-height: 50px;
+		.fa {
+			display: inline;
 			&:hover {
-				color: $crimDark;
+				font-size: 28px;
 			}
 		}
-		b {
-			.terminado {
-				text-decoration: line-through;
-			}
+		&.crim {
+			color: $crim;
+		}
+		&.claro {
+			color: $blueLight;
+		}
+		&.oscuro {
+			color: $blueDark;
+		}
+		&.rojo {
+			color: $rojo;
+		}
+		&.naranja {
+			color: $naranja;
+		}
+		&.amarillo {
+			color: $amarillo;
+		}
+		&.verde {
+			color: $verde;
 		}
 	}
 }
