@@ -1,67 +1,38 @@
-body{
-	font-family: 'Raleway', sans-serif !important;
-
+body {
+	background: url("../img/bg3.jpg");
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: cover;
 }
 
-#todo {
-	&.default {
-		@include colores ($crim, $crimDark);
-	}
-	&.crimson {
-		@include colores ($crim, $crimDark);
-	}
-	&.blueLight {
-		@include colores ($blueLight, $blueDark);
-	}
-	&.blueDark {
-		@include colores ($blueDark, $blueLight);
-	}
-	&.rojo {
-		@include colores ($rojo, $naranja);
-	}
-	&.naranja {
-		@include colores ($naranja, $amarillo);
-	}
-	&.amarillo {
-		@include colores ($amarillo, $verde);
-	}
-	&.verde {
-		@include colores ($verde, $crim);
-	}
-}
-
-#elige {
-	height:60px;
-	.cajita {
-		display: inline;
-		font-size:25px;
-		line-height: 50px;
-		.fa {
+#reloj {
+	.clock {
+		h1 {
 			display: inline;
-			&:hover {
-				font-size: 28px;
+			font-size:80px;
+		}
+		color: white;
+		margin-top: 100px;
+	}
+	.fecha {
+		h4 {
+			display: inline;
 			}
-		}
-		&.crim {
-			color: $crim;
-		}
-		&.claro {
-			color: $blueLight;
-		}
-		&.oscuro {
-			color: $blueDark;
-		}
-		&.rojo {
-			color: $rojo;
-		}
-		&.naranja {
-			color: $naranja;
-		}
-		&.amarillo {
-			color: $amarillo;
-		}
-		&.verde {
-			color: $verde;
-		}
+		color: white;
+		margin-top: 60px;
+			}
+
+	.btn {
+		margin-top: 60px;
+	}
+}
+
+#mundial {
+	color: white;
+}
+
+#myModal {
+	label {
+		display: block;
 	}
 }

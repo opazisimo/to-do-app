@@ -2,73 +2,80 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>To Do App - Organiza tus tareas diarias :)</title>
+		<title> Reloj Digital </title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 		<script src="https://use.fontawesome.com/a4f2ba36c5.js"></script>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
 		<div class="container">
-			<div id="todo" class="default">
-				<div id="elige" class="text-center">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center">
-							<div class="cajita rojo text-center" onClick="colorRojo()">
-								<i class="fa fa-paint-brush" aria-hidden="true"></i>
-							</div>
-							<div class="cajita crim text-center" onClick="colorCrim()">
-								<i class="fa fa-paint-brush" aria-hidden="true"></i>
-							</div>
-							<div class="cajita naranja text-center" onClick="colorNaranja()">
-								<i class="fa fa-paint-brush" aria-hidden="true"></i>
-							</div>
-							<div class="cajita amarillo text-center" onClick="colorAmarillo()">
-								<i class="fa fa-paint-brush" aria-hidden="true"></i>
-							</div>
-							<div class="cajita verde text-center" onClick="colorVerde()">
-								<i class="fa fa-paint-brush" aria-hidden="true"></i>
-							</div>
-							<div class="cajita claro text-center" onClick="colorClaro()">
-								<i class="fa fa-paint-brush" aria-hidden="true"></i>
-							</div>
-							<div class="cajita oscuro text-center" onClick="colorOscu()">
-								<i class="fa fa-paint-brush" aria-hidden="true"></i>
-							</div>
+			<section id="reloj">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<div class="clock">
+							<h1 id="hora"></h1><h1 class="puntos">:</h1><h1 id="minutos"></h1>
+						</div>
+						<div class="fecha">
+							<h4 id="fechaActual"></h4>
 						</div>
 					</div>
-				</div>	
+				</div>
 				<div class="row">
-					<div class="int col-md-8 col-md-offset-2">
-						<header id="head" class="text-center">
-							<h1>To Do App</h1>
-							<p><i class="fa fa-calendar" aria-hidden="true"></i> Organiza tus tareas diarias! <i class="fa fa-calendar" aria-hidden="true"></i></p>
-						</header>
-						<section id="addi">
-					    <div class="instrucciones text-center">
-					    	<h3><b>Instrucciones</b></h3>
-					    	<ul>
-					    		<li>1.- Para agregar una tarea, escríbela en la caja de abajo y luego pulsa el botón "Añade tu tarea!"</li>
-					    		<li>2.- Para marcarla como realizada, pulsa en la checkbox que se encuentra a la izquierda de la tarea.</li>
-					    		<li>3.- Para eliminar la tarea, presiona la <i class="fa fa-times" aria-hidden="true"></i> que se encuentra a la derecha de la tarea.</li>
-					    	</ul>
-					    </div>
-					    <div class="input-group">
-					      <input type="text" class="form-control" id="inputsito" placeholder="Escribe aquí tu tarea">
-					      <span class="input-group-btn">
-					        <button class="btn btn-default btn-addi" id="paraLimpiar"type="button" onclick="agregaTarea()">Añade tu tarea! <i class="fa fa-heart" aria-hidden="true"></i></button>
-					      </span>
-					    </div>
-						</section>
-						<section id="added">
-						</section>
+					<div class="col-xs-12 text-center">
+						<button type="button" class="btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-location-arrow" aria-hidden="true"></i></button>
 					</div>
-				</div>	
+				</div>
+			</section>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			      </div>
+			      <div class="modal-body">
+			      	<label class="ciudades">
+			      		<input id="boxChicago" type="checkbox"> <span>Chicago</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxSaoPaulo" type="checkbox"> <span>Sao Paulo</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxSantiago" type="checkbox"> <span>Santiago</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxMx" type="checkbox"> <span>México D.F</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxCaracas" type="checkbox"> <span>Caracas</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxBrasilia" type="checkbox"> <span>Brasilia</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxQuito" type="checkbox"> <span>Quito</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxGuayaquil" type="checkbox"> <span>Guayaquil</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxSantaMarta" type="checkbox"> <span>Santa Marta</span>
+			      	</label>
+			      	<label class="ciudades">
+			      		<input id="boxBogota" type="checkbox"> <span>Bogotá</span>
+			      	</label>
+			      </div>
+			    </div>
+			  </div>
 			</div>
+
+			<section id="mundial">
+			</section>
 		</div>
+
 <!-- Archivos JS: Main y Bootstrap -->
-		<script src="js/main.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 	</body>
 </html>
